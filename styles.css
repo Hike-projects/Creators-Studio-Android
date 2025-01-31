@@ -31,3 +31,39 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+/* Font Styling for Prompt */
+.prompt-thin {
+  font-family: "Prompt", serif;
+  font-weight: 100;
+}
+
+.prompt-light {
+  font-family: "Prompt", serif;
+  font-weight: 300;
+}
+
+.prompt-regular {
+  font-family: "Prompt", serif;
+  font-weight: 400;
+}
+
+.prompt-medium {
+  font-family: "Prompt", serif;
+  font-weight: 500;
+}
+
+.prompt-semibold {
+  font-family: "Prompt", serif;
+  font-weight: 600;
+}
+
+.prompt-bold {
+  font-family: "Prompt", serif;
+  font-weight: 700;
+}
+
+.prompt-black {
+  font-family: "Prompt", serif;
+  font-weight: 900;
+}
