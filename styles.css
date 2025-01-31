@@ -1,7 +1,8 @@
 /* Custom sticky header with iOS blur effect */
 .backdrop-blur-ios {
-  backdrop-filter: blur(10px); /* Adds a blur effect */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  backdrop-filter: blur(10px); /* Adds blur effect */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border to define the header */
 }
 
 /* 3D Button Effect */
