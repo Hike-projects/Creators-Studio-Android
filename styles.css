@@ -1,7 +1,7 @@
 /* Sticky Header with iOS Blur Effect */
 .backdrop-blur-ios {
   backdrop-filter: blur(10px); /* Add blur effect */
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black with opacity */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle bottom border */
 }
 
@@ -13,12 +13,18 @@
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Slightly raised shadow */
 }
 
 /* Image Sizing for Icons */
 .icon-size {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 /* 3D Button Effect */
@@ -27,7 +33,7 @@
   color: black;
   font-weight: 500;
   font-family: "Prompt", sans-serif;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -35,8 +41,8 @@
 }
 
 .btn-3d:hover {
-  transform: translateY(-2px); /* Slight rise on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+  transform: scale(1.05); /* Scale button slightly on hover */
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.5); /* Deeper shadow */
 }
 
 /* Footer Link Styling */
