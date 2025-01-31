@@ -1,45 +1,28 @@
-/* Header Bar Styles */
-.header-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #1a202c; /* Tailwind's gray-900 color */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+/* Custom sticky header with iOS blur effect */
+.backdrop-blur-ios {
+  backdrop-filter: blur(10px); /* Adds the iOS-style blur */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
 }
 
-/* Header Navigation Links */
-.nav-link {
-  margin-left: 16px;
-  text-decoration: none;
-  color: #f1f1f1;
-  font-size: 16px;
-  transition: color 0.2s;
-}
-
-.nav-link:hover {
-  color: #e2e8f0; /* Slightly lighter gray for hover */
-}
-
-/* Custom button with 3D effect */
+/* 3D Button Effect */
 .btn-3d {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Initial shadow */
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+/* Button Hover State */
 .btn-3d:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px); /* Move up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase shadow */
 }
 
-/* App Card Icons */
+/* App Icon Sizing */
 .icon-size {
   width: 50px;
   height: 50px;
 }
 
-/* Utility Classes */
+/* Responsive Container */
 .container {
   max-width: 1200px;
   margin-left: auto;
