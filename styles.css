@@ -1,3 +1,27 @@
+/* Header Bar Styles */
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1a202c; /* Tailwind's gray-900 color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Navigation Links */
+.nav-link {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #e2e8f0; /* Slightly lighter gray for hover */
+}
+
 /* Custom button with 3D effect */
 .btn-3d {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -9,7 +33,17 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
+/* App Card Icons */
 .icon-size {
   width: 50px;
   height: 50px;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
