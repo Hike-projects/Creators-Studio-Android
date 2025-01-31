@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creators Studio</title>
+  <!-- Using TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body class="bg-black text-white font-sans">
+
   <!-- Header (Sticky with Blur and Transparency) -->
   <header class="sticky top-0 backdrop-blur-ios z-50 shadow-lg">
     <div class="container mx-auto flex items-center justify-center py-4">
@@ -16,15 +18,13 @@
   </header>
 
   <!-- Main Content -->
-  <div class="min-h-screen flex flex-col items-center justify-center px-6 pb-16 pt-20">
-    <h1 class="text-4xl font-bold mb-6">Creators Studio</h1>
-    <p class="text-lg mb-10">Your hub for creative apps</p>
+  <div class="min-h-screen px-6 pb-16 pt-20">
+    <p class="text-lg text-center mb-10">Your hub for creative apps</p>
 
     <!-- App List -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
+    <div class="grid grid-cols-2 gap-8">
       <!-- App 1: Capcut -->
-      <div class="text-center">
+      <div class="text-center bg-black border border-gray-800 shadow-lg rounded-lg p-4">
         <img src="https://via.placeholder.com/50" alt="Capcut Icon" class="icon-size mx-auto mb-3">
         <h2 class="font-semibold text-xl">Capcut</h2>
         <p class="text-sm mb-4">Version: 1.0.0</p>
@@ -34,7 +34,7 @@
       </div>
 
       <!-- App 2: Wink -->
-      <div class="text-center">
+      <div class="text-center bg-black border border-gray-800 shadow-lg rounded-lg p-4">
         <img src="https://via.placeholder.com/50" alt="Wink Icon" class="icon-size mx-auto mb-3">
         <h2 class="font-semibold text-xl">Wink</h2>
         <p class="text-sm mb-4">Version: 2.3.5</p>
@@ -44,7 +44,7 @@
       </div>
 
       <!-- App 3: Lightroom -->
-      <div class="text-center">
+      <div class="text-center bg-black border border-gray-800 shadow-lg rounded-lg p-4">
         <img src="https://via.placeholder.com/50" alt="Lightroom Icon" class="icon-size mx-auto mb-3">
         <h2 class="font-semibold text-xl">Lightroom</h2>
         <p class="text-sm mb-4">Version: 5.1.2</p>
@@ -54,7 +54,7 @@
       </div>
 
       <!-- App 4: Meitu -->
-      <div class="text-center">
+      <div class="text-center bg-black border border-gray-800 shadow-lg rounded-lg p-4">
         <img src="https://via.placeholder.com/50" alt="Meitu Icon" class="icon-size mx-auto mb-3">
         <h2 class="font-semibold text-xl">Meitu</h2>
         <p class="text-sm mb-4">Version: 3.0.1</p>
@@ -62,7 +62,6 @@
           Download
         </button>
       </div>
-
     </div>
   </div>
 
@@ -83,5 +82,6 @@
       </nav>
     </div>
   </footer>
+
 </body>
 </html>
