@@ -4,85 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creators Studio</title>
-  <!-- Add Prompt Font -->
+
+  <!-- Add Google Font (Prompt) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <!-- Tailwind and Additional CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,600&display=swap" rel="stylesheet">
+
+  <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-black text-white font-sans">
 
-  <!-- Header (Sticky with Blur Background) -->
+  <!-- Header Section -->
   <header class="sticky top-0 z-50 backdrop-blur-ios">
-    <div class="container mx-auto flex items-center justify-center py-4">
-      <h1 class="prompt-semibold text-2xl text-white">Creators Studio</h1>
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="font-semibold text-2xl font-[Prompt] text-white">Creators Studio</h1>
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main Content Section -->
   <div class="min-h-screen px-6 pb-16 pt-20">
-    <p class="prompt-light text-lg text-center mb-10">Your hub for creative apps</p>
+    <h1 class="font-semibold text-4xl font-[Prompt] text-center mb-6">Welcome to Creators Studio</h1>
+    <p class="font-light text-lg font-[Prompt] text-center mb-10">Your hub for creative apps</p>
 
-    <!-- App List -->
-    <div class="grid grid-cols-2 gap-8">
+    <!-- App Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <!-- App 1: Capcut -->
-      <div class="text-center bg-black border border-gray-800 shadow-lg rounded-lg p-4">
-        <img src="https://via.placeholder.com/50" alt="Capcut Icon" class="icon-size mx-auto mb-3">
-        <h2 class="prompt-semibold text-xl">Capcut</h2>
-        <p class="prompt-light text-sm mb-4">Version: 1.0.0</p>
-        <button class="btn-3d bg-white text-black font-medium px-4 py-2 rounded shadow-md hover:bg-gray-200">
-          Download
-        </button>
+      <div class="app-card">
+        <img src="https://tinu.be/ECMG27PH3" alt="Capcut Icon" class="icon-size mx-auto mb-3">
+        <h2 class="font-semibold text-xl font-[Prompt]">CapCut</h2>
+        <p class="font-light text-sm font-[Prompt] mb-4">Version: 1.0.0</p>
+        <button class="btn-3d">Download</button>
       </div>
 
       <!-- App 2: Wink -->
-      <div class="text-center bg-black border border-gray-800 shadow-lg rounded-lg p-4">
-        <img src="https://via.placeholder.com/50" alt="Wink Icon" class="icon-size mx-auto mb-3">
-        <h2 class="prompt-semibold text-xl">Wink</h2>
-        <p class="prompt-light text-sm mb-4">Version: 2.3.5</p>
-        <button class="btn-3d bg-white text-black font-medium px-4 py-2 rounded shadow-md hover:bg-gray-200">
-          Download
-        </button>
+      <div class="app-card">
+        <img src="https://tinu.be/Ts0KrlcLV" alt="Wink Icon" class="icon-size mx-auto mb-3">
+        <h2 class="font-semibold text-xl font-[Prompt]">Wink</h2>
+        <p class="font-light text-sm font-[Prompt] mb-4">Version: 2.3.5</p>
+        <button class="btn-3d">Download</button>
       </div>
 
       <!-- App 3: Lightroom -->
-      <div class="text-center bg-black border border-gray-800 shadow-lg rounded-lg p-4">
+      <div class="app-card">
         <img src="https://via.placeholder.com/50" alt="Lightroom Icon" class="icon-size mx-auto mb-3">
-        <h2 class="prompt-semibold text-xl">Lightroom</h2>
-        <p class="prompt-light text-sm mb-4">Version: 5.1.2</p>
-        <button class="btn-3d bg-white text-black font-medium px-4 py-2 rounded shadow-md hover:bg-gray-200">
-          Download
-        </button>
+        <h2 class="font-semibold text-xl font-[Prompt]">Lightroom</h2>
+        <p class="font-light text-sm font-[Prompt] mb-4">Version: 5.1.2</p>
+        <button class="btn-3d">Download</button>
       </div>
 
       <!-- App 4: Meitu -->
-      <div class="text-center bg-black border border-gray-800 shadow-lg rounded-lg p-4">
-        <img src="https://via.placeholder.com/50" alt="Meitu Icon" class="icon-size mx-auto mb-3">
-        <h2 class="prompt-semibold text-xl">Meitu</h2>
-        <p class="prompt-light text-sm mb-4">Version: 3.0.1</p>
-        <button class="btn-3d bg-white text-black font-medium px-4 py-2 rounded shadow-md hover:bg-gray-200">
-          Download
-        </button>
+      <div class="app-card">
+        <img src="https://tinu.be/8yYWH1n_-" alt="Meitu Icon" class="icon-size mx-auto mb-3">
+        <h2 class="font-semibold text-xl font-[Prompt]">Meitu</h2>
+        <p class="font-light text-sm font-[Prompt] mb-4">Version: 3.0.1</p>
+        <button class="btn-3d">Download</button>
       </div>
     </div>
   </div>
 
-  <!-- Footer (Dark Grey with White Text) -->
+  <!-- Footer Section -->
   <footer class="bg-gray-800 py-6 text-center">
     <div class="container mx-auto px-4">
-      <p class="prompt-light text-white text-sm mb-2">&copy; 2025 Creators Studio. All rights reserved.</p>
+      <p class="font-light text-sm font-[Prompt] text-white mb-2">&copy; 2025 Creators Studio. All rights reserved.</p>
       <div class="flex justify-center items-center space-x-4 mb-4">
-        <!-- Social icons -->
-        <a href="#" class="prompt-light text-white hover:text-gray-300 text-lg">Facebook</a>
-        <a href="#" class="prompt-light text-white hover:text-gray-300 text-lg">Twitter</a>
-        <a href="#" class="prompt-light text-white hover:text-gray-300 text-lg">Instagram</a>
+        <a href="#" class="footer-link">Facebook</a>
+        <a href="#" class="footer-link">Twitter</a>
+        <a href="#" class="footer-link">Instagram</a>
       </div>
       <nav class="space-x-6">
-        <a href="#" class="prompt-light text-white hover:text-gray-300 text-sm">Privacy Policy</a>
-        <a href="#" class="prompt-light text-white hover:text-gray-300 text-sm">Terms of Service</a>
-        <a href="#" class="prompt-light text-white hover:text-gray-300 text-sm">Contact Us</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Service</a>
+        <a href="#" class="footer-link">Contact Us</a>
       </nav>
     </div>
   </footer>
